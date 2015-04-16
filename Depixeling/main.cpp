@@ -10,6 +10,7 @@
  * IMPORTANT - DO NOT CHANGE THIS FILE - IMPORTANT
  */
 
+/* hello */
 
 int  window_width  = 300;
 int  window_height = 300;

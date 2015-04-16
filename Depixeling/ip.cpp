@@ -11,6 +11,7 @@
  * By
  * Yaxi (Lucy) Gao
  * Zhu, Huangjian(Sean)
+ * why...
  */
 
 void initializeGraph(int ht, int wd, int n, bool (*graph)[ht][wd][n]) {
