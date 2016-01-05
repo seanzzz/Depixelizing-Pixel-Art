@@ -24,9 +24,6 @@
 */
 
 
-Image*	ip_depixelize (Image* src, int scale);
-void initializeGraph(int ht, int wd, int n, bool graph[ht][wd][n]);
-
-
+Image*	ip_depixelize (Image* src, int scale, int wd, int ht);
 
 #endif // IP_H

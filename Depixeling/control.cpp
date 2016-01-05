@@ -82,9 +82,9 @@ void menu_func (int value)
 	case M_FILE_OPEN:   // enum #2
 		if (!quietMode)
 			cerr << "Open file (string - no spaces) : ";
-		cin  >> filename;
-		checkStream(cin);
-		image_load(filename);
+		//cin  >> filename;
+		//checkStream(cin);
+		image_load("/Users/yaxigao/Desktop/Academic/JuniorSpring/ComputerGraphics/Depixeling/smw.bmp");
 		break;
 
 
@@ -109,7 +109,7 @@ void menu_func (int value)
 	case M_DEPIXELIZE: // enum #6
 		{
             Image* resultImage = NULL;
-            int scale = 10; // default scale is ten
+            int scale = 12; // default scale is twelve
 			if (!currentImage) 
 			{
 				cerr << "Sorry, no image is loaded." << endl;
@@ -120,9 +120,8 @@ void menu_func (int value)
 			{
 				cerr << "What is quiet mode???" << endl;
 			}
-            resultImage = ip_depixelize(currentImage, scale);
-            
-            
+            resultImage = ip_depixelize(currentImage, scale, currentImage->getWidth(), currentImage->getHeight());
+            //originalImage = currentImage;
             if (resultImage != NULL)
             {
                 delete currentImage;
@@ -136,6 +135,7 @@ void menu_func (int value)
                     cerr << "done!" << endl;
                 
                 if (!textMode)
+                    displayMode = true;
                     glutPostRedisplay();
             }
 			break;
@@ -256,9 +256,6 @@ void image_load (const char* filename)
 		return;
 	}
 
-	if (!textMode)
-		glutPostRedisplay();
-
 	if (!quietMode)
 		cerr << "done!" << endl;
 }  
@@ -319,8 +316,7 @@ void image_revert ()
 		return;
 	}
 
-	if (!textMode)
-		glutPostRedisplay();
+
 
 	if (!quietMode)
 		cerr << "done!" << endl;

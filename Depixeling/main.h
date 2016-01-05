@@ -20,6 +20,7 @@ extern Image* originalImage;
 
 extern bool quietMode;
 extern bool textMode;
+extern bool displayMode;
 
 
 int  main (int argc, char** argv);

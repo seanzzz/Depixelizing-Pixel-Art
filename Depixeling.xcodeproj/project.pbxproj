@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140A761D1ADDCC52007350E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140A761C1ADDCC52007350E6 /* main.cpp */; };
+		140A76241ADDCC68007350E6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140A76231ADDCC68007350E6 /* GLUT.framework */; };
+		140A76261ADDCC6C007350E6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140A76251ADDCC6C007350E6 /* OpenGL.framework */; };
+		140A76281ADDCC70007350E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140A76271ADDCC70007350E6 /* Cocoa.framework */; };
+		140A762A1ADDCCAD007350E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140A76291ADDCCAD007350E6 /* main.cpp */; };
+		140A76321ADDCD09007350E6 /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140A762C1ADDCD09007350E6 /* control.cpp */; };
+		140A76331ADDCD09007350E6 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140A762E1ADDCD09007350E6 /* image.cpp */; };
+		140A76351ADDCD33007350E6 /* ip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140A76341ADDCD33007350E6 /* ip.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +30,18 @@
 
 /* Begin PBXFileReference section */
 		140A76191ADDCC52007350E6 /* Depixeling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Depixeling; sourceTree = BUILT_PRODUCTS_DIR; };
-		140A761C1ADDCC52007350E6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		140A76231ADDCC68007350E6 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		140A76251ADDCC6C007350E6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		140A76271ADDCC70007350E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		140A76291ADDCCAD007350E6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		140A762B1ADDCD09007350E6 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		140A762C1ADDCD09007350E6 /* control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = control.cpp; sourceTree = "<group>"; };
+		140A762D1ADDCD09007350E6 /* control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = control.h; sourceTree = "<group>"; };
+		140A762E1ADDCD09007350E6 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
+		140A762F1ADDCD09007350E6 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		140A76301ADDCD09007350E6 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
+		140A76311ADDCD09007350E6 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		140A76341ADDCD33007350E6 /* ip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140A76281ADDCC70007350E6 /* Cocoa.framework in Frameworks */,
+				140A76261ADDCC6C007350E6 /* OpenGL.framework in Frameworks */,
+				140A76241ADDCC68007350E6 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +61,9 @@
 		140A76101ADDCC52007350E6 = {
 			isa = PBXGroup;
 			children = (
+				140A76271ADDCC70007350E6 /* Cocoa.framework */,
+				140A76251ADDCC6C007350E6 /* OpenGL.framework */,
+				140A76231ADDCC68007350E6 /* GLUT.framework */,
 				140A761B1ADDCC52007350E6 /* Depixeling */,
 				140A761A1ADDCC52007350E6 /* Products */,
 			);
@@ -57,7 +80,15 @@
 		140A761B1ADDCC52007350E6 /* Depixeling */ = {
 			isa = PBXGroup;
 			children = (
-				140A761C1ADDCC52007350E6 /* main.cpp */,
+				140A762B1ADDCD09007350E6 /* common.h */,
+				140A762C1ADDCD09007350E6 /* control.cpp */,
+				140A762D1ADDCD09007350E6 /* control.h */,
+				140A762E1ADDCD09007350E6 /* image.cpp */,
+				140A762F1ADDCD09007350E6 /* image.h */,
+				140A76301ADDCD09007350E6 /* ip.h */,
+				140A76311ADDCD09007350E6 /* main.h */,
+				140A76291ADDCCAD007350E6 /* main.cpp */,
+				140A76341ADDCD33007350E6 /* ip.cpp */,
 			);
 			path = Depixeling;
 			sourceTree = "<group>";
@@ -118,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140A761D1ADDCC52007350E6 /* main.cpp in Sources */,
+				140A76351ADDCD33007350E6 /* ip.cpp in Sources */,
+				140A762A1ADDCCAD007350E6 /* main.cpp in Sources */,
+				140A76321ADDCD09007350E6 /* control.cpp in Sources */,
+				140A76331ADDCD09007350E6 /* image.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +266,7 @@
 				140A76221ADDCC52007350E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
