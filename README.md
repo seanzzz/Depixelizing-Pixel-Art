@@ -1,4 +1,4 @@
 # Depixelizing-Pixel-Art
-Implemented a Research Paper that Depixelizes Pixel Art
+Implemented a research paper that depixelizes pixel art.
 
-Original Paper by J Kopf: johanneskopf.de/publications/pixelart/paper/pixel.pdf 
+Original paper by Johannes Kopf and Dani Lischinski: johanneskopf.de/publications/pixelart/paper/pixel.pdf 
